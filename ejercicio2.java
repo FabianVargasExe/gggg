@@ -22,6 +22,24 @@ public static void main(String[] args) {
       numeros.add(i);
   }
   ite = numeros.iterator();
+  // remover el 3 en adelante
+  ite.hasNext();
+  ite.hasNext();
+  ite.hasNext();
+  while(ite.hasNext()){
+    iter.remove();
+  
+  }
+  
+  // Ejercicio 1: recursion
+  public static int suma(int numero){
+     int digito = numero % 10;
+     int restante = numero / 10;
+     return suma(restante) + digito;
+    // retun 2+1+2+(suma(10))
+    // 2+1+2+0+(suma(1))
+  
+  }
   
   
   

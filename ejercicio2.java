@@ -33,6 +33,9 @@ public static void main(String[] args) {
   
   // Ejercicio 1: recursion
   public static int suma(int numero){
+    if (numero == 0){
+       return;
+    }
      int digito = numero % 10;
      int restante = numero / 10;
      return suma(restante) + digito;
